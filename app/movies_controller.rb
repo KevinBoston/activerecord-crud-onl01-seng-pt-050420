@@ -46,11 +46,11 @@ def can_get_the_last_item_in_the_database
 end
 
 def can_get_size_of_the_database
-  Movie.length
+  Movie.count
 end
 
 def can_find_the_first_item_from_the_database_using_id
-  Movie.find_by_id(0)
+  Movie.find_by(id:1)
 end
 
 def can_find_by_multiple_attributes
